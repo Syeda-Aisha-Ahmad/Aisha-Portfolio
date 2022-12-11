@@ -3,12 +3,12 @@ import logo from '../../../Assets/logo.png'
 
 const Nav = () => {
     return (
-        <div className="navbar bg-base-100 w-11/12">
+        <div className="navbar bg-base-100 w-10/12 mx-auto text-primary font-bold">
 
             {/* Large device */}
-            <a href="/" className="lg:hidden flex normal-case text-xl lg:w-14 md:w-14 w-12 rounded-full border border-red-200"><img src={logo} alt="" /></a>
+            <a href="/" className="lg:hidden flex normal-case text-xl lg:w-14 md:w-14 w-12 rounded-full border border-primary"><img src={logo} alt="" /></a>
             <div className="lg:navbar-start ">
-                <a href="/" className=" normal-case text-xl hidden lg:flex lg:w-14 md:w-14 w-12 rounded-full border border-red-200"><img src={logo} alt="" /></a>
+                <a href="/" className=" normal-case text-xl hidden lg:flex lg:w-14 md:w-14 w-12 rounded-full border border-primary"><img src={logo} alt="" /></a>
             </div>
 
             <div className="navbar-end hidden lg:flex">

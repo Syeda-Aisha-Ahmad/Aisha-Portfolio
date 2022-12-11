@@ -1,20 +1,61 @@
 .image-style {
     position: relative;
-    left: 150px;
+    top: 15px;
+    left: 100px;
     background: url("../../../Assets/banner.jpg");
     background-repeat: no-repeat;
-    height: 390px;
+    height: 400px;
 }
 
 .image-style:before {
     content: '';
     position: absolute;
     top: 0;
-    right: 130px;
+    right: 100px;
     width: 100%;
     height: 100%;
     background: url("../../../Assets/splash.jpg");
     background-size: 100%;
     background-position: center;
     mix-blend-mode: screen;
+}
+
+.wrapper {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+}
+
+path {
+    stroke: #262bb2;
+    fill: #2f34bd;
+    stroke-dasharray: 1800;
+    opacity: 10;
+    animation: animate 3s cubic-bezier(0, 0.23, 1, .1);
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 1800;
+    }
+
+    30% {
+        opacity: 10;
+        fill: none;
+        stroke-dashoffset: 1800;
+    }
+
+    90% {
+        fill: #7175ea;
+    }
+
+    100% {
+        opacity: 10;
+        fill: #4348ce;
+        stroke-dashoffset: 0;
+    }
 }
