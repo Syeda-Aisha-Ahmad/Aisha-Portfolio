@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../../../Assets/logo.png'
 
 const Nav = () => {
@@ -13,10 +14,12 @@ const Nav = () => {
 
             <div className="navbar-end hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
-                    <li><a href="/">About Me</a></li>
-                    <li><a href="/">Skills</a></li>
-                    <li><a href="/">Projects</a></li>
-                    <li><a href="/">Contact</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li> <Link to='/blog'>Blog</Link> </li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
 
@@ -31,10 +34,12 @@ const Nav = () => {
                         </button>
                     </label>
                     <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 absolute right-1 shadow bg-base-100 rounded-box w-32">
-                        <li><a href="/">About Me</a></li>
-                        <li><a href="/">Skills</a></li>
-                        <li><a href="/">Projects</a></li>
-                        <li><a href="/">Contact</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#project">Projects</a></li>
+                        <li> <Link to='/blog'>Blog</Link> </li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>

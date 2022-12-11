@@ -3,9 +3,9 @@ import '../About/About.css'
 
 const Skills = () => {
     return (
-        <div className='w-10/12 mx-auto'>
+        <div id='skills' className='w-10/12 mx-auto'>
             <h1 className='text-5xl text-primary font-bold text-center'>Skills</h1>
-            <div className='grid grid-cols-2 px-10 gap-20'>
+            <div className='grid lg:grid-cols-2 lg:px-10 lg:gap-20'>
                 <div>
                     <h1 className='text-3xl text-primary font-semibold w-5/12 mx-auto my-10'>Experience</h1>
                     <div className='grid grid-cols-3 gap-y-5'>

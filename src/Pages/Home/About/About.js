@@ -5,7 +5,7 @@ import './About.css'
 
 const About = () => {
     return (
-        <div className="hero min-h-screen my-20 w-10/12 mx-auto">
+        <div id='about' className="hero min-h-screen my-20 w-10/12 mx-auto">
             <div className="hero-content flex-col items-center lg:flex-row">
                 <div className='w-4/12 pr-4 text-justify'>
                     <div className='heading'>
@@ -28,15 +28,24 @@ const About = () => {
                         <span className='flex items-center'><FaAddressBook className='text-xl  m-2 pr-1' /> Dhaka, Bangladesh</span>
                     </p>
                     <div className='flex'>
-                        <div className='drop w-14 h-14 rounded-full mr-2'>
-                            <p><FaLinkedinIn className='text-xl' /></p>
-                        </div>
-                        <div className='drop w-14 h-14 rounded-full mx-2'>
-                            <p><FaGithub className='text-xl' /></p>
-                        </div>
-                        <div className='drop w-14 h-14 rounded-full mx-2'>
-                            <p><p><FaFacebookF className='text-xl' /></p></p>
-                        </div>
+                        <a href="https://www.linkedin.com/feed/?trk=seo-authwall-base_google-one-tap-submit">
+                            <div className='drop w-14 h-14 rounded-full mr-2'>
+                                <p><FaLinkedinIn className='text-xl' /></p>
+                            </div>
+                        </a>
+
+
+                        <a href="https://github.com/Syeda-Aisha-Ahmad">
+                            <div className='drop w-14 h-14 rounded-full mx-2'>
+                                <p><FaGithub className='text-xl' /></p>
+                            </div>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100015597035398">
+                            <div className='drop w-14 h-14 rounded-full mx-2'>
+                                <p><FaFacebookF className='text-xl' /></p>
+                            </div>
+                        </a>
+
                     </div>
                 </div>
             </div>
