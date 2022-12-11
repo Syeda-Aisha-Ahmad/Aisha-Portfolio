@@ -5,7 +5,7 @@ import './About.css'
 
 const About = () => {
     return (
-        <div className="hero min-h-screen mt-20">
+        <div className="hero min-h-screen my-20 w-10/12 mx-auto">
             <div className="hero-content flex-col items-center lg:flex-row">
                 <div className='w-4/12 pr-4 text-justify'>
                     <div className='heading'>
@@ -23,9 +23,9 @@ const About = () => {
 
                     </div>
                     <p className="py-6 ">
-                        <span className='flex '><FaPhone className='text-xl m-2 pr-1' /> +8801992756161 <br /></span>
-                        <span className='flex'><FaEnvelope className='text-xl  m-2 pr-1' /> 19aishaahmad@gmail.com <br /></span>
-                        <span className='flex'><FaAddressBook className='text-xl  m-2 pr-1' /> Dhaka, Bangladesh</span>
+                        <span className='flex items-center'><FaPhone className='text-xl m-2 pr-1' /> +8801992756161 <br /></span>
+                        <span className='flex items-center'><FaEnvelope className='text-xl  m-2 pr-1' /> 19aishaahmad@gmail.com <br /></span>
+                        <span className='flex items-center'><FaAddressBook className='text-xl  m-2 pr-1' /> Dhaka, Bangladesh</span>
                     </p>
                     <div className='flex'>
                         <div className='drop w-14 h-14 rounded-full mr-2'>
